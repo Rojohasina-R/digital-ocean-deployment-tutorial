@@ -1,6 +1,7 @@
 services:
   web:
-    build: .
+    build:
+      target: development  # this chooses the "development" stage of the Dockerfile
     volumes:
       - .:/usr/src/app/
     ports:
